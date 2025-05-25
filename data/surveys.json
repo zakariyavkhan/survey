@@ -1,0 +1,12 @@
+[
+  {
+    "survey_name": "Patient Satisfaction Survey",
+    "survey_desc": "A simple smiley face based survey",
+    "questions": [
+      {
+        "question_text": "How was your visit today?",
+        "response_type_id": 1
+      }
+    ]
+  }
+]
