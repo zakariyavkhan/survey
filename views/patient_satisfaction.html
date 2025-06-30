@@ -5,13 +5,20 @@
   <title>Patient Satisfaction Survey</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
     body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Vertical center */
+      align-items: center;     /* Horizontal center */
       font-family: sans-serif;
       text-align: center;
-      margin-top: 4rem;
     }
     button.survey-btn {
-      font-size: 2rem;
+      font-size: 5rem;
       margin: 0 1rem;
       padding: 1rem;
       cursor: pointer;
@@ -22,9 +29,9 @@
   <h1>How was your visit today?</h1>
 
   <div>
-    <button class="survey-btn btn btn-light" onclick="submitResponse(1)">😃</button>
+    <button class="survey-btn btn btn-light" onclick="submitResponse(1)">😞</button>
     <button class="survey-btn btn btn-light" onclick="submitResponse(2)">🙂</button>
-    <button class="survey-btn btn btn-light" onclick="submitResponse(3)">😞</button>
+    <button class="survey-btn btn btn-light" onclick="submitResponse(3)">😃</button>
   </div>
 
   <!-- Feedback Modal -->
