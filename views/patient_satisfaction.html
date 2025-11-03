@@ -22,11 +22,48 @@
       align-items: center;
       font-family: sans-serif;
       text-align: center;
+      background-color: #fafafa;
+    }
+
+    #surveyContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* spacing between heading and buttons */
+      gap: 5rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      /* horizontal spacing between buttons */
+      margin: 0 1rem;
+      transition: transform 0.2s ease;
     }
 
     .btn img {
-      width: 100px;
-      height: 100px;
+      width: 200px;
+      height: 200px;
+    }
+
+    #output {
+      /* space between survey and output */
+      margin-top: 3rem;
+      font-size: 2rem;
+    }
+
+    #output h5 {
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      font-weight: 700;
     }
   </style>
 </head>
@@ -88,7 +125,7 @@
 
       setTimeout(() => {
         output.style.display = 'none';
-        surveyContent.style.display = 'block';
+        surveyContent.style.display = 'flex';
       }, 3000);
     }
 
